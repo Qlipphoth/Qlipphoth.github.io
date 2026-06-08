@@ -1,0 +1,11 @@
+/* Override only: provide a robust fallback stack for code blocks.
+   Do NOT attempt to download or host fonts in this repo.
+   Keep remote @font-face (if any) untouched; this rule ensures a fallback
+   stack is used when the remote font fails to load. */
+#article-container code,
+#article-container pre {
+  font-family: MyFont, 'JetBrains Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Monaco, monospace !important;
+}
+
+/* If you prefer system monospace only, uncomment:
+  #article-container code,#article-container pre{font-family:Menlo, Monaco, 'Ubuntu Mono', monospace !important;} */
